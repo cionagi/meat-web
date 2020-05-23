@@ -1,0 +1,30 @@
+{
+  "functions": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "firbease-debug.log",
+      "**/.*",
+      "**/node_modules/**",
+      "components/**",
+      "helpers/**",
+      "out/**",
+      "pages/**",
+      "public/**",
+      "scripts/**",
+      "firestore.rules",
+      "readme.md"
+    ]
+  },
+  "hosting": {
+    "site": "vitoria-meet",
+    "public": "out",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextjs-server"
+      }
+    ]
+  }
+}
