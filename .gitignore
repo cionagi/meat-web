@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+*/node_modules
 /.pnp
 .pnp.js
 
@@ -10,12 +11,14 @@
 
 # next.js
 /.next/
-/out/
+*/out/
+*/nextjs
 
 # production
 /build
 
 # misc
+**/.idea
 .DS_Store
 
 # debug
@@ -24,7 +27,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+#firebase
+*/.firebase
+**/.firebase
+
