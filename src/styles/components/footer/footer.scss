@@ -1,0 +1,30 @@
+.footer-top {
+  padding: 1.5rem 4rem;
+  background: $BLACK-87;
+
+  &__list {
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        width: 50%;
+        float: left;
+        a {
+          font-size: 0.8rem;
+          color: $WHITE;
+          text-decoration: none;
+        }
+      }
+    }
+    &-bold {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    &-normal {
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+    }
+  }
+}

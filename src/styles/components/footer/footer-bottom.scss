@@ -1,0 +1,12 @@
+.footer-bottom {
+  background: $PRIMARY;
+  padding: 0.5rem;
+
+  &__text {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+}

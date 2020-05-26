@@ -1,0 +1,116 @@
+.product-card {
+  &__container {
+    text-align: center;
+    padding: 1rem 0.3rem 2rem;
+    margin-bottom: 2em;
+    background-color: $WHITE;
+    border: 1px solid $WHITE-two-60;
+
+    &.horizontal-view {
+      display: flex;
+      flex-direction: column;
+      .product-card {
+        &__image_container {
+          width: 50%;
+        }
+        &__info {
+          width: 50%;
+        }
+        &__offer_box {
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+        }
+        &__box {
+          display: flex;
+          .product-card {
+            &__image_container {
+              width: 50%;
+            }
+            &__info {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__offer {
+    &_box {
+      position: absolute;
+      color: white;
+      right: 1rem;
+      margin: 1px 10px;
+    }
+    &_label {
+      background-color: $PRIMARY;
+      font-size: 1.3rem;
+      width: 73px;
+      height: 73px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1;
+      border-radius: 100%;
+
+      .text {
+        font-size: 0.6rem;
+      }
+    }
+  }
+  &__image {
+    img {
+      max-height: 200px;
+      width: 100%;
+    }
+  }
+  &__detail {
+    color: $BLACK-87;
+    text-align: center;
+    &_name {
+      font-size: 1rem;
+      margin: 0 auto;
+      padding-top: 1em;
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 1.3rem;
+    }
+    &_info {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+  &__price {
+    &_value {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $PRIMARY;
+    }
+    &_ref {
+      padding-top: 0.2rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+  &__stock {
+    font-size: 0.75em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -2px;
+    color: $PRIMARY;
+  }
+  &__buy {
+    padding-top: 1.3em;
+    &__buy_quantity {
+    }
+    &__buy_add {
+    }
+    &__buy_rest {
+    }
+    &__buy_add_to_bag {
+    }
+  }
+}
