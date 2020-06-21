@@ -1,9 +1,20 @@
 @import 'colors';
 @import 'components';
-
+@import 'titles';
+@import '~@brainhubeu/react-carousel/lib/style.css';
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
+}
+
+.ant-layout-content {
+  .custom-height {
+    min-height: 80vh !important;
+  }
+  .custom-container {
+    padding-top: 3em;
+    padding-bottom: 4em;
+  }
 }
 
 .site-layout-content {
