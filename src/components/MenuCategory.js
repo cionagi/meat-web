@@ -11,18 +11,19 @@ function MenuCategory() {
   return (
     <Menu onClick={(e) => handleClick(e)} selectedKeys={[selectedKeys]} mode="horizontal">
       <Menu.Item key="category1" icon={<MailOutlined />}>
-        <Link href="/">
-          <a>Category 1</a>
+        <Link href="/catalog">
+          <a>Vacuno</a>
         </Link>
       </Menu.Item>
       <Menu.Item key="category2" icon={<MailOutlined />}>
-        <Link href="/">
-          <a>Category 2</a>
+        <Link href="/catalog">
+          <a>Pollo</a>
         </Link>
       </Menu.Item>
+
       <Menu.Item key="category3" icon={<MailOutlined />}>
-        <Link href="/">
-          <a>Category 3</a>
+        <Link href="/catalog">
+          <a>Otros</a>
         </Link>
       </Menu.Item>
     </Menu>
