@@ -7,7 +7,7 @@ const FooterBottom = () => {
     <div className="footer-bottom">
       <p className="footer-bottom__text">
         {date.getFullYear()}
-        &nbsp; Carniceria
+        &nbsp; ©Txileno.com Todos los derechos reservados
       </p>
     </div>
   )

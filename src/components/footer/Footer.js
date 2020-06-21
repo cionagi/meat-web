@@ -17,7 +17,13 @@ const Footer = () => {
           <Col xs={24} sm={12} md={8} lg={8} xl={8}>
             <LinkList />
           </Col>
-          <Col xs={24} sm={12} md={8} lg={8} xl={8} />
+          <Col xs={24} sm={12} md={8} lg={8} xl={8}>
+            <p>Formas de pago</p>
+            <p>+34 945 14 27 73</p>
+            <a href="http://maps.google.com/?q=Domingo Beltran 31, Vitoria" target="_blank" rel="noreferrer">
+              Domingo Beltran 31 - Vitoria-Gazteiz
+            </a>
+          </Col>
         </Row>
       </Container>
     </div>

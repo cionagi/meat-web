@@ -1,15 +1,16 @@
 // Dependency
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const LinkList = ({ items, bold }) => {
   const renderItems = () => {
     return items.map((item) => {
       return (
         <li key={item.id}>
-          <a className={`footer-top__list${bold ? '-bold' : '-normal'}`} href={item.url}>
-            {item.name}
-          </a>
+          <Link href={item.url} as={item.name.toLowerCase()}>
+            <a className={`footer-top__list${bold ? '-bold' : '-normal'}`}>{item.name}</a>
+          </Link>
         </li>
       )
     })
@@ -30,34 +31,19 @@ LinkList.propTypes = {
 LinkList.defaultProps = {
   items: [
     {
-      id: 1,
-      name: 'Category',
-      url: 'Category',
+      id: 3,
+      name: 'Contacto',
+      url: '/contact',
     },
     {
-      id: 11,
-      name: 'Category',
-      url: 'Category',
+      id: 5,
+      name: 'Catalogo',
+      url: '/catalog',
     },
     {
-      id: 111,
-      name: 'Category',
-      url: 'Category',
-    },
-    {
-      id: 1111,
-      name: 'Category',
-      url: 'Category',
-    },
-    {
-      id: 1111113,
-      name: 'Category',
-      url: 'Category',
-    },
-    {
-      id: 1111112,
-      name: 'Category',
-      url: 'Category',
+      id: 7,
+      name: 'Politica de privacidad',
+      url: '#',
     },
   ],
   bold: false,
