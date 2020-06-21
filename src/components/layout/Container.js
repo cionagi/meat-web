@@ -7,7 +7,7 @@ const Container = ({ children }) => {
   return (
     <Row justify="center">
       <Col xs={22} sm={20} md={20} lg={20} xl={20}>
-        {children}
+        <div className="custom-container">{children}</div>
       </Col>
     </Row>
   )
