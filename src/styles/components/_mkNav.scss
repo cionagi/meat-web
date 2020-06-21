@@ -1,0 +1,44 @@
+.mk-nav {
+  background-color: #eeeeee;
+  &__container {
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-social {
+      list-style: none;
+      display: inline-block;
+      margin-bottom: initial;
+      &-item {
+        display: inline-block;
+        float: right;
+        list-style: none;
+        a {
+          margin: 0 10px;
+          font-size: 20px;
+          color: #444444;
+        }
+      }
+    }
+
+    &-item {
+      float: right !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+      margin-left: 15px;
+      span {
+        margin-right: 5px;
+        float: left;
+      }
+      a {
+        text-decoration: none;
+        outline: 0 none;
+        color: #444444;
+        float: left;
+      }
+    }
+  }
+}
