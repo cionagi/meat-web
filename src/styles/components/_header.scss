@@ -3,4 +3,16 @@
   padding: 0 50px;
   color: $BLACK-54;
   background: $PRIMARY;
+
+  .logo {
+    width: 120px;
+    height: 31px;
+    background: url("/logo-white.svg") no-repeat;
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
+
+
 }
+
+
