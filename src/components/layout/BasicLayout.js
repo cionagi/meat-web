@@ -3,7 +3,6 @@ import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 import { Layout } from 'antd'
-
 // Components
 import FooterCustom from '../footer/Index'
 import MkNav from '../MkNav'
@@ -14,7 +13,9 @@ const BasicLayout = ({ children }) => {
     <Layout>
       <MkNav />
       <Header className="custom-nav-header">
-        <Link href="/">Carniceria Txileno</Link>
+        <Link href="/">
+          <div className="logo" />
+        </Link>
       </Header>
       <Content>
         <div className="custom-height">{children}</div>
